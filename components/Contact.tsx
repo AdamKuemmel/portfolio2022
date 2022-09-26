@@ -36,7 +36,7 @@ export default function Contact({}: Props) {
           </div>
           <div className="flex items-center justify-center space-x-5">
             <MapPinIcon className="text-[#edf1cf]] animate-pulse h-7 w-7" />
-            <p className="text-2xl">+516.695.8650</p>
+            <p className="text-2xl">Denver, CO</p>
           </div>
         </div>
         <form

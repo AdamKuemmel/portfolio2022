@@ -16,7 +16,7 @@ function Hero({ pageInfo }: Props) {
       "<CodeAllDay />",
     ],
     loop: true,
-    delaySpeed: 2000,
+    delaySpeed: 1000,
   });
 
   return (
@@ -31,7 +31,7 @@ function Hero({ pageInfo }: Props) {
         <h2 className="text-gray-500 uppercase tracking-[11px]">
           {pageInfo?.role}
         </h2>
-        <h1 className="px-10 py-5 text-5xl font-semibold lg:text-6xl">
+        <h1 className="px-10 py-5 text-3xl font-semibold lg:text-6xl">
           <span className="mr-4">{text}</span>
           <Cursor cursorColor="lightGreen" />
         </h1>
