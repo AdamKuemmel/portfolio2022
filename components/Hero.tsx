@@ -13,7 +13,7 @@ function Hero({ pageInfo }: Props) {
     words: [
       `Hi, The Name is ${pageInfo?.name}`,
       "drinks-too-much-coffee.tsx",
-      "<DevAllDay />",
+      "<CodeAllDay />",
     ],
     loop: true,
     delaySpeed: 2000,
