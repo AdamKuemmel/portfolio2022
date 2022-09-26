@@ -37,7 +37,7 @@ export default function Projects({ projects }: Props) {
               src={urlFor(project?.image).url()}
               alt=""
             />
-            <div className="max-w-6xl px-0 space-y-10 md:px-10">
+            <div className="max-w-6xl px-0 space-y-5 md:px-10">
               <h4 className="text-3xl font-semibold text-center">
                 <span className="underline decoration-yellow-500/30">
                   Case Study {i + 1} of {projects.length}:
