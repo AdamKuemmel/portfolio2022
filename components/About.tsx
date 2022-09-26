@@ -33,10 +33,10 @@ export default function About({ pageInfo }: Props) {
         src={urlFor(pageInfo?.profilePic).url()}
         className="flex-shrink-0 object-cover w-56 h-56 -mb-20 rounded-full md:mb-0 md:rounded-lg md:w-64 md:h-96 xl:w-[500px] xl:h-[600px]"
       />
-      <div className="px-0 space-y-10 md:px-10">
-        <h4 className="text-4xl font-semibold">
+      <div className="px-0 space-y-5 md:px-10">
+        <h4 className="text-2xl font-semibold">
           Heres a{" "}
-          <span className="underline decoration-violet-400/50">little</span>{" "}
+          <span className="underline decoration-[#edf1cf]/50">little</span>{" "}
           background
         </h4>
         <p className="text-sm">{pageInfo?.backgroundInfo}</p>

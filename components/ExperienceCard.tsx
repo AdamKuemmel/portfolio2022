@@ -8,7 +8,7 @@ type Props = {
 
 export default function ExperienceCard({ experience }: Props) {
   return (
-    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center p-5 mt-24 bg-slate-500 opacity-40 hover:opacity-100 cursor-pointer transition-opacity duration-200">
+    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-80 md:w-[600px] xl:w-[900px] snap-start p-5 mt-24 bg-slate-700/40 opacity-40 hover:opacity-100 cursor-pointer transition-opacity duration-200 overflow-y-scroll  scrollbar-thin scrollbar-track-slate-500 scrollbar-thumb-[#edf1cf]">
       <motion.img
         initial={{
           y: -100,
@@ -20,13 +20,11 @@ export default function ExperienceCard({ experience }: Props) {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         src={urlFor(experience?.companyImage).url()}
-        className="w-32 h-32 rounded-full  xl:w-[200px] xl:h-[200px] object-cover object-center"
+        className="w-32 h-32 rounded-full  xl:w-[200px] xl:h-[200px] object-contain object-center"
       />
       <div className="px-0 md:px-10">
-        <h4 className="text-4xl font-light">
-          {experience?.jobTitle} of {experience?.company}
-        </h4>
-        <p className="mt-1 text-2xl font-bold">{experience?.company}</p>
+        <h4 className="text-3xl font-semibold">{experience?.jobTitle}</h4>
+        {/* <p className="mt-1 text-2xl font-bold">{experience?.company}</p> */}
         <div className="flex my-2 space-x-2">
           {experience.technologies.map((technology) => (
             <img

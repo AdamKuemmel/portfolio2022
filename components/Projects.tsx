@@ -30,6 +30,7 @@ export default function Projects({ projects }: Props) {
               initial={{
                 y: -300,
               }}
+              className="h-44 md:h-96"
               transition={{ duration: 1 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

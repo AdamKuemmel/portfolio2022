@@ -20,28 +20,29 @@ export default function Contact({}: Props) {
         contact
       </h3>
       <div className="flex flex-col space-y-10">
-        <h4 className="text-4xl font-semibold text-center">
-          Heres a few ways we can connect{" "}
-          <span className="underline decoration-yellow-300/50">Lets Talk.</span>
+        <h4 className="px-10 pt-10 text-xl font-semibold text-center">
+          Heres a few ways we can connect
+          <br />
+          <span className="underline decoration-[#edf1cf]/50">Lets Talk.</span>
         </h4>
-        <div className="space-y-10">
+        <div className="space-y-5">
           <div className="flex items-center justify-center space-x-5">
-            <PhoneIcon className="text-yellow-400 animate-pulse h-7 w-7" />
+            <PhoneIcon className="text-[#edf1cf] animate-pulse h-7 w-7" />
             <p className="text-2xl">+516.695.8650</p>
           </div>
           <div className="flex items-center justify-center space-x-5">
-            <EnvelopeIcon className="text-yellow-400 animate-pulse h-7 w-7" />
-            <p className="text-2xl">+516.695.8650</p>
+            <EnvelopeIcon className="text-[#edf1cf] animate-pulse h-7 w-7" />
+            <p className="text-2xl">adamkuemmel@gmail.com</p>
           </div>
           <div className="flex items-center justify-center space-x-5">
-            <MapPinIcon className="text-yellow-400 animate-pulse h-7 w-7" />
+            <MapPinIcon className="text-[#edf1cf]] animate-pulse h-7 w-7" />
             <p className="text-2xl">+516.695.8650</p>
           </div>
         </div>
         <form
           onSubmit={handleSubmit(onSubmit)}
           action=""
-          className="flex flex-col mx-auto space-y-2 w-fit"
+          className="flex flex-col mx-auto space-y-2 "
         >
           <div className="flex space-x-2">
             <input
@@ -69,7 +70,7 @@ export default function Contact({}: Props) {
             placeholder="Message"
           />
           <button
-            className="px-10 py-5 text-lg font-bold text-black bg-yellow-400 rounded-md"
+            className="px-10 py-5 text-lg font-bold text-black bg-[#edf1cf] rounded-md"
             type="submit"
           >
             submit

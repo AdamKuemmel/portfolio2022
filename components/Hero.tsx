@@ -31,11 +31,11 @@ function Hero({ pageInfo }: Props) {
         <h2 className="text-gray-500 uppercase tracking-[11px]">
           {pageInfo?.role}
         </h2>
-        <h1 className="px-10 text-5xl font-semibold lg:text-6xl">
+        <h1 className="px-10 py-5 text-5xl font-semibold lg:text-6xl">
           <span className="mr-4">{text}</span>
           <Cursor cursorColor="lightGreen" />
-        </h1>{" "}
-        <div className="z-20 pt-3">
+        </h1>
+        <div className="z-20 pt-5">
           <Link href="#about">
             <button className="heroBtn">About</button>
           </Link>
