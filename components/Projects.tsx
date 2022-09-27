@@ -23,14 +23,14 @@ export default function Projects({ projects }: Props) {
       <div className="relative z-20 flex w-full overflow-x-scroll overflow-y-hidden snap-x snap-mandatory scrollbar-thin scrollbar-track-gray-400/30 scrollbar-thumb-yellow-300/80">
         {projects?.map((project, i) => (
           <div
-            className="flex flex-col items-center justify-center flex-shrink-0 w-screen h-screen p-20 space-y-5 snap-center md:p-44 snap-mandatory"
+            className="flex flex-col items-center justify-center flex-shrink-0 w-screen h-screen p-20 space-y-2 snap-center md:p-44 snap-mandatory"
             key={i}
           >
             <motion.img
               initial={{
                 y: -300,
               }}
-              className="h-44 md:h-96"
+              className="h-44 md:h-80"
               transition={{ duration: 1 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
