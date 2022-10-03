@@ -15,7 +15,7 @@ export default function Projects({ projects }: Props) {
         <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
           projects
         </h3>
-        <Carousel>
+        <Carousel slide={false}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           {projects?.map((project, i) => (
             <div
