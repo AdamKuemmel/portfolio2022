@@ -19,14 +19,14 @@ export default function Projects({ projects }: Props) {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           {projects?.map((project, i) => (
             <div
-              className="flex flex-col items-center justify-center flex-shrink-0 w-screen h-screen p-20 space-y-2 snap-center md:p-44 snap-mandatory"
+              className="flex flex-col items-center justify-center flex-shrink-0 w-screen p-20 space-y-2 snap-center md:p-44 snap-mandatory"
               key={i}
             >
               <motion.img
                 initial={{
                   y: -300,
                 }}
-                className="h-44 md:h-80"
+                className=" md:h-80"
                 transition={{ duration: 1 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -34,7 +34,7 @@ export default function Projects({ projects }: Props) {
                 alt=""
               />
               <div className="max-w-6xl px-0 space-y-5 md:px-10">
-                <h4 className="text-3xl font-semibold text-center">
+                <h4 className="text-xl font-semibold text-center md:text-3xl">
                   <span className="underline decoration-yellow-500/30">
                     Case Study {i + 1} of {projects.length}:
                   </span>

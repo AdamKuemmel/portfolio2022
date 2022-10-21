@@ -27,7 +27,7 @@ export default function About({ pageInfo }: Props) {
         transition={{ duration: 1.2 }}
         whileInView={{
           x: 0,
-          opacity: 1,
+          opacity: 0.5,
         }}
         viewport={{ once: true }}
         src={urlFor(pageInfo?.profilePic).url()}
