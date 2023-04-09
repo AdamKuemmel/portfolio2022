@@ -42,7 +42,7 @@ export default function Contact({}: Props) {
         <form
           onSubmit={handleSubmit(onSubmit)}
           action=""
-          className="flex flex-col mx-auto space-y-2 "
+          className="flex flex-col p-1 mx-auto space-y-2 "
         >
           <div className="flex space-x-2">
             <input

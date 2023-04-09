@@ -32,7 +32,6 @@ export default function WorkExperience({ experiences }: Props) {
           experience
         </h3>
         <Carousel slide={false}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
           {experiences?.map((experience) => (
             <ExperienceCard experience={experience} key={experience._id} />
           ))}

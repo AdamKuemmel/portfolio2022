@@ -16,9 +16,6 @@ export default function About({ pageInfo }: Props) {
       }}
       className="relative flex flex-col items-center h-screen px-10 mx-auto text-center md:text-left md:flex-row max-w-7xl justify-evenly"
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
-        About
-      </h3>
       <motion.img
         initial={{
           x: -200,
@@ -34,6 +31,9 @@ export default function About({ pageInfo }: Props) {
         className="flex-shrink-0 object-cover w-28 h-28 -mb-32 rounded-full md:mb-0 md:rounded-lg md:w-64 md:h-96 xl:w-[500px] xl:h-[600px]"
       />
       <div className="px-0 space-y-5 md:px-10">
+        <h3 className=" uppercase tracking-[20px] text-gray-500 text-2xl">
+          About
+        </h3>
         <h4 className="text-2xl font-semibold">
           Heres a{" "}
           <span className="underline decoration-[#edf1cf]/50">little</span>{" "}

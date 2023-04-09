@@ -15,8 +15,7 @@ export default function Projects({ projects }: Props) {
         <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
           projects
         </h3>
-        <Carousel slide={false}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
+        <Carousel slide={true}>
           {projects?.map((project, i) => (
             <div
               className="flex flex-col items-center justify-center flex-shrink-0 w-screen p-20 space-y-2 snap-center md:p-44 snap-mandatory"
