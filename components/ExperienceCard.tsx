@@ -4,11 +4,15 @@ import { Experience } from "../typings";
 import { urlFor } from "../sanity";
 type Props = {
   experience: Experience;
+  key: string;
 };
 
-export default function ExperienceCard({ experience }: Props) {
+export default function ExperienceCard({ experience, key }: Props) {
   return (
-    <article className="flex flex-col rounded-lg items-center justify-center flex-shrink-0 w-80 md:w-[600px] xl:w-[900px]  p-5 mt-20 bg-slate-500/40 mx-auto">
+    <article
+      key={key}
+      className="flex flex-col items-center justify-center flex-shrink-0 h-[80vh] p-5 mt-10 overflow-y-scroll rounded-lg w-96 bg-slate-500/40"
+    >
       <motion.img
         initial={{
           y: -100,

@@ -31,11 +31,11 @@ export default function WorkExperience({ experiences }: Props) {
         <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
           experience
         </h3>
-        <Carousel slide={false}>
+        <div className="flex space-x-4 overflow-x-auto">
           {experiences?.map((experience) => (
             <ExperienceCard experience={experience} key={experience._id} />
           ))}
-        </Carousel>
+        </div>
       </div>
     </>
   );
