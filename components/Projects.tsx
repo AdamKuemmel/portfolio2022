@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { Project } from "../typings";
 import { urlFor } from "../sanity";
 import { Alert, Carousel } from "flowbite-react";
-
 type Props = {
   projects: Project[];
 };
@@ -11,16 +10,13 @@ type Props = {
 export default function Projects({ projects }: Props) {
   return (
     <>
-      <div className="relative z-0 flex flex-col items-center h-screen max-w-full pt-20 mx-auto overflow-hidden text-left md:flex-row justify-evenly">
+      <div className="relative z-0 flex flex-col items-center h-screen pt-20 mx-auto overflow-hidden text-left max-w-7xl md:flex-row justify-evenly">
         <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
-          projects
+          experience
         </h3>
-        <Carousel slide={true}>
+        <div className="flex space-x-4 overflow-x-auto">
           {projects?.map((project, i) => (
-            <div
-              className="flex flex-col items-center justify-center flex-shrink-0 w-screen p-20 space-y-2 snap-center md:p-44 snap-mandatory"
-              key={i}
-            >
+            <article className="flex flex-col items-center justify-center flex-shrink-0 h-[80vh] p-5 mt-10 overflow-y-scroll rounded-lg w-96 bg-slate-500/40">
               <motion.img
                 initial={{
                   y: -300,
@@ -53,11 +49,11 @@ export default function Projects({ projects }: Props) {
 
                 <p className="text-center md:text-left">{project?.summary}</p>
               </div>
-            </div>
+            </article>
           ))}
-        </Carousel>
-        <div className="w-full absolute top-[30%] bg-yellow-300/10 left-0 h-[500px] -skew-y-12 z-20" />
+        </div>
       </div>
+      {/* <div className="w-full absolute top-[30%] bg-yellow-300/10 left-0 h-[500px] -skew-y-12 z-20" /> */}
     </>
   );
 }
