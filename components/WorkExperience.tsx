@@ -8,6 +8,13 @@ type Props = {
 };
 
 export default function WorkExperience({ experiences }: Props) {
+  const sortedExperiences = [...experiences].sort((a, b) => {
+    // Use getTime() to convert Date to number
+    return (
+      new Date(a.dateStarted).getTime() - new Date(b.dateStarted).getTime()
+    );
+  });
+
   return (
     <>
       {/* <motion.div
@@ -32,7 +39,7 @@ export default function WorkExperience({ experiences }: Props) {
           experience
         </h3>
         <div className="flex space-x-4 overflow-x-auto">
-          {experiences?.map((experience) => (
+          {sortedExperiences?.reverse().map((experience) => (
             <ExperienceCard experience={experience} key={experience._id} />
           ))}
         </div>

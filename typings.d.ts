@@ -46,6 +46,9 @@ export interface Experience extends SanityBody {
   jobTitle: string;
   points: string[];
   technologies: Technology[];
+  sort: {
+    dateStarted: string;
+  };
 }
 
 export interface Project extends SanityBody {
