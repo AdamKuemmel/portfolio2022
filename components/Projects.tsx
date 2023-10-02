@@ -16,7 +16,10 @@ export default function Projects({ projects }: Props) {
         </h3>
         <div className="flex space-x-4 overflow-x-auto">
           {projects?.map((project, i) => (
-            <article className="flex flex-col items-center justify-center flex-shrink-0 h-[80vh] p-5 mt-10 overflow-y-scroll rounded-lg w-96 bg-slate-500/40">
+            <article
+              className="flex flex-col items-center justify-center flex-shrink-0 h-[80vh] p-5 mt-10 overflow-y-scroll rounded-lg w-96 bg-slate-500/40"
+              key={i}
+            >
               <motion.img
                 initial={{
                   y: -300,
